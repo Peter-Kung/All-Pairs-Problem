@@ -9,7 +9,7 @@ Based on a given file, you are asked to write an MPI program to calculate the di
  ![image](https://user-images.githubusercontent.com/30169115/176693018-f7990c9b-8fe4-4ad1-bd58-2601cc57a1cc.png)
 
  
-## 2. Explain how to compile and run the program
+## 2. How to Compile and Run the Program
 
 - How to compile:
 
@@ -38,7 +38,7 @@ CORE_N := 2
 - Monitor time cost
   - default is open, you can close it by cancel macro `TIMETEST`
 
-## 3. Describes how you parallelize the computations
+## 3. Describes Parallelize the Computations
  
 1. Process 0 give n points of (x, y) to other worker process.
 2. Every process calculate (n / worker process quntity) quntity point with other points distance.
