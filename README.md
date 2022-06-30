@@ -23,10 +23,10 @@ $ make
 $ make qtest
 ```
 
-- Play with different core quntity
+- Play with different core quntity: (the core number you wnat to run)
 
 ```c
-CORE_N := 2(the core number you wnat to run)
+CORE_N := 2
 ```
 
 - Play with different data scale
@@ -40,10 +40,10 @@ CORE_N := 2(the core number you wnat to run)
 
 ## 3. Describes how you parallelize the computations
  
-1. 傳遞 n 數量的點座標
-2. 之後算 n / (worker process 數量) 的點與其他所有點的距離
-3. 回傳距離最短的五個
-4. 找出所有回傳最短距離的五個
+1. Process 0 give n (x, y) to other worker process.
+2. Every process calculate (n / worker process quntity) quntity point with other points distance.
+3. Worker processes return five shortest distances to process 0.
+4. Process 0 use stack five the smallest distances in all return distances. 
  
 ![image](https://user-images.githubusercontent.com/30169115/176693593-ab5ed11a-4957-4b73-bf2f-8116ec2b39ed.png)
 
