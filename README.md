@@ -30,13 +30,13 @@ CORE_N := 2(the core number you wnat to run)
 ```
 
 - Play with different data scale
-  - modify data number in the main.c program
-  - modify main.c freopen path to "test.txt"
-  - modify input_gem.c’s data number: n
-  - > $ make thtest
+  - modify `data number` in the `main.c` program
+  - modify main.c `freope`n path to `test.txt`
+  - modify `input_gem.c`’s `data number`: `n`
+  - >$ make thtest
 
 - Monitor time cost
-  - default is open, you can close it by cancel macro TIMETEST
+  - default is open, you can close it by cancel macro `TIMETEST`
 
 ## 3. Describes how you parallelize the computations
  
@@ -64,6 +64,10 @@ CORE_N := 2(the core number you wnat to run)
  
 ## 6. Reference
 [Find execution time of a C program](https://www.techiedelight.com/find-execution-time-c-program/)
+
 [Plotting multiple data files](https://riptutorial.com/gnuplot/example/27408/plotting-multiple-data-files)
+
 [Gnuplot FAQ](http://www.gnuplot.info/faq/index.html#x1-190002.5)
+
 [Gnuplot](https://hackmd.io/@jasonmatobo/Linux_Kernel_Note_2021/%2F%40jasonmatobo%2Fgnuplot)
+
