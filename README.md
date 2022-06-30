@@ -40,7 +40,7 @@ CORE_N := 2
 
 ## 3. Describes how you parallelize the computations
  
-1. Process 0 give n (x, y) to other worker process.
+1. Process 0 give n points of (x, y) to other worker process.
 2. Every process calculate (n / worker process quntity) quntity point with other points distance.
 3. Worker processes return five shortest distances to process 0.
 4. Process 0 use stack five the smallest distances in all return distances. 
